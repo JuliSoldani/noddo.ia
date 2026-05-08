@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noddo.</title>
+    <meta name="description"
+        content="Automatizamos las tareas que te quitan tiempo. Conectamos tu negocio con el mundo digital mediante Agentes de IA y n8n.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo-area" aria-label="Inicio noddo.ia">
+                <img src="./logo completo.svg" alt="noddo.ia" width="120" style="height:auto;">
+            </a>
+            <div class="nav-links">
+                <a href="#proyectos">Soluciones</a>
+                <a href="#proyectos">Casos de Uso</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contacto" class="text-primary open-contact-modal" style="font-weight:600;">Contacto</a>
+                <button id="themeToggle" class="theme-toggle" aria-label="Cambiar Tema">☾</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero-section">
+            <div id="pointer-glow" class="pointer-glow"></div>
+            <div class="container relative-z">
+                <span class="hero-badge"><span class="status-dot"></span> Tu nuevo compañero de equipo</span>
+                <h1>Delegá tareas.<br>Escalá lo importante.</h1>
+                <p>Somos el puente entre tu empresa y el mundo digital. Integramos soluciones de Inteligencia Artificial
+                    a tu medida para resolver cuellos de botella, optimizar tus sistemas y acelerar tu crecimiento.</p>
+                <div class="hero-actions">
+                    <a href="#contacto" class="btn btn-primary open-contact-modal">Contactanos</a>
+                    <a href="#proyectos" class="btn btn-secondary">Ver cómo funciona</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Logos -->
+        <section class="trust-section">
+            <div class="container">
+                <h3 class="trust-title">Conectamos y automatizamos tus sistemas de trabajo</h3>
+                <div class="marquee-container">
+                    <div class="marquee-track">
+                        <!-- Grupo 1 -->
+                        <div class="marquee-group">
+                            <h2>MySQL</h2>
+                            <h2>OpenAI</h2>
+                            <h2>Google Drive</h2>
+                            <h2>WhatsApp</h2>
+                            <h2>RSS</h2>
+                            <h2>Slack</h2>
+                            <h2>Notion</h2>
+                            <h2>HubSpot</h2>
+                            <h2>n8n</h2>
+                            <h2>Make</h2>
+                            <h2>Salesforce</h2>
+                        </div>
+                        <!-- Grupo 2 (Clon para bucle infinito) -->
+                        <div class="marquee-group" aria-hidden="true">
+                            <h2>MySQL</h2>
+                            <h2>OpenAI</h2>
+                            <h2>Google Drive</h2>
+                            <h2>WhatsApp</h2>
+                            <h2>RSS</h2>
+                            <h2>Slack</h2>
+                            <h2>Notion</h2>
+                            <h2>HubSpot</h2>
+                            <h2>n8n</h2>
+                            <h2>Make</h2>
+                            <h2>Salesforce</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases / Projects -->
+        <section id="proyectos" class="cases-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Descubre lo que podemos hacer por ti</h2>
+                    <p>Así es como ayudamos a emprendedores y negocios reales
+                        a ahorrar cientos de horas.</p>
+                </div>
+
+                <!-- Case 1 -->
+                <div class="case-block">
+                    <div class="case-content">
+                        <h3>Gestión de Clientes Inteligente</h3>
+                        <p>En cada negocio la forma de vender es única y nuestros agentes se adaptan a tus reglas.
+                            Diseñamos asistentes que conversan con tus clientes de forma natural y guían el proceso
+                            de venta desde el primer contacto hasta el cierre sin importar si ofreces servicios
+                            profesionales
+                            o vendes productos físicos..</p>
+                        <ul>
+                            <li>Respuestas inmediatas en cualquier momento del día.</li>
+                            <li>Sistemas que perfilan al cliente y recomiendan tus mejores opciones.</li>
+                            <li>Integración total con las herramientas que ya usas en tu empresa.</li>
+                            <li>Flexibilidad absoluta para replicar el tono y la voz de tu marca.</li>
+                        </ul>
+                    </div>
+                    <div class="case-media">
+                        <div class="css-mockup workflow-mockup">
+                            <div class="stripe-node"><span class="icon">💻</span> Nuevo Lead (Web/RRSS)</div>
+                            <div class="line"></div>
+                            <div class="n8n-node" style="border-left-color: var(--primary);"><span class="icon">✨</span>
+                                IA Clasificadora</div>
+                            <div class="branches">
+                                <div class="hubspot-node" style="border-left-color: #10b981;"><span
+                                        class="icon">Agenda</span> Sistema Gestión</div>
+                                <div class="slack-node" style="border-left-color: #3b82f6;"><span class="icon">📱</span>
+                                    Aviso SMS/Slack</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="case-block reverse">
+                    <div class="case-content">
+                        <h3>Soporte Inteligente y Escalable</h3>
+                        <p>La inteligencia artificial permite resolver los problemas de tus usuarios de forma
+                            instantánea.
+                            Entrenamos a la IA con toda la información de tu empresa para que actúe como tu mejor
+                            empleado
+                            y brinde soluciones precisas para cualquiertipo de escenario..</p>
+                        <ul>
+                            <li>Atención simultánea de cientos de consultas sin perder calidad.</li>
+                            <li>Ejecución de tareas complejas en el momento según lo que pida el cliente.</li>
+                            <li>Derivación inteligente a operadores humanos cuando el caso lo requiere.</li>
+                            <li>Capacidad de adaptación para cualquier industria o volumen de mensajes.</li>
+                        </ul>
+                    </div>
+                    <div class="case-media">
+                        <div class="css-mockup chat-mockup">
+                            <div class="chat-header">noddo.ia Bot</div>
+                            <div class="chat-history">
+                                <div class="bubble bot">Hola, he analizado tu web. Puedo ayudar a tu equipo a reducir
+                                    20h a la semana.</div>
+                                <div class="bubble user">¿Cómo lo harías?</div>
+                                <div class="bubble bot">Conectando tus leads de Meta a Make y asignándolos
+                                    automáticamente en tu CRM.</div>
+                            </div>
+                            <div class="chat-input">Escribe un mensaje...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="case-block">
+                    <div class="case-content">
+                        <h3>Gestion administrativa</h3>
+                        <p>Cualquier tarea digital repetitiva que ocupe el tiempo de tu equipo puede ser automatizada.
+                            Creamos flujos a medida que conectan todos tus sistemas para que la información se mueva
+                            sola
+                            y tu empresa funcione en piloto automático.</p>
+                        <ul>
+                            <li>Sincronización de datos entre todas tus plataformas de trabajo.</li>
+                            <li>Procesamiento automático de documentos y carga de información.</li>
+                            <li>Reportes y alertas generados en tiempo real para tomar mejores decisiones.</li>
+                            <li>Desarrollos diseñados exclusivamente para destrabar los cuellos de botella de tu rubro.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="case-media">
+                        <div class="css-mockup dashboard-mockup">
+                            <div class="dash-top">
+                                <div class="stat-card">Operaciones Automatizadas<br><b>8,492</b></div>
+                                <div class="stat-card">Horas Ahrorradas<br><b class="text-primary">124h</b></div>
+                            </div>
+                            <div class="dash-chart">
+                                <div class="bar" style="height: 40%"></div>
+                                <div class="bar" style="height: 60%"></div>
+                                <div class="bar" style="height: 80%"></div>
+                                <div class="bar" style="height: 50%"></div>
+                                <div class="bar" style="height: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Process / How it Works -->
+        <section id="proceso" class="process-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nuestro flujo de trabajo</h2>
+                    <p>Un sistema de integración transparente, diseñado para no interrumpir tus operaciones actuales.
+                    </p>
+                </div>
+
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4>Diagnóstico</h4>
+                        <p>Analizamos de cerca tus flujos de trabajo actuales. Identificamos tareas y
+                            evaluamos en qué cuellos de botella exactos un agente virtual puede multiplicar tu
+                            productividad.</p>
+                    </div>
+                    <div class="process-line"></div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4>Implementación</h4>
+                        <p>Diseñamos y construimos la solución a medida. Conectamos plataformas, configuramos la lógica
+                            de datos y moldeamos a la Inteligencia Artificial para que se adapte a las reglas de tu
+                            empresa.</p>
+                    </div>
+                    <div class="process-line"></div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4>Pruebas y Ajustes</h4>
+                        <p>No lanzamos nada sin estar seguros. Probamos todo el sistema junto a ti y tu equipo en
+                            entornos seguros. Calibramos las respuestas y optimizamos los tiempos de ejecución.
+                        </p>
+                    </div>
+                    <div class="process-line"></div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h4>Producción y Soporte</h4>
+                        <p>Activamos el sistema definitivo. El agente pasará a estar online 24/7 resolviendo tareas.
+                            Nosotros nos quedamos a un lado supervisando y garantizando soporte técnico
+                            siempre que lo necesites.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Preguntas y Respuestas</h2>
+                    <p>Todo lo que necesitas saber antes de modernizar tu empresa.</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-q">
+                            ¿Qué tipo de automatizaciones pueden crear?
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-a">
+                            <p>Podemos conectar casi todos los programas que ya usas a diario (email, redes sociales,
+                                calendarios, hojas de calculo, bases de datos, facturación,etc). Construimos vías
+                                automáticas entre ellos para que la información fluya sin intervención humana.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q">
+                            ¿Necesito entender de programación o IA avanzada?
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-a">
+                            <p>Absolutamente no. Nosotros somos tu equipo técnico y tu traductor digital. Analizamos
+                                cómo trabajas hoy, construimos la solución y te enseñamos a usarla de forma simple. Todo
+                                queda "llave en mano", listo para que disfrutes de tu tiempo extra.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q">
+                            ¿Qué tipo de empresas pueden beneficiarse?
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-a">
+                            <p>Cualquier empresa que realice tareas repetitivas en ordenador como e-commerces que
+                                manejan
+                                stock, agencias inmobiliarias buscando leads, despachos de abogados con gran volumen de
+                                documentos, o clínicas gestionando citas. En resumen, cualquier empresa que quiera
+                                automatizar tareas.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-q">
+                            ¿Cómo brindan soporte?
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-a">
+                            <p>Te acompañamos desde el día 1. No solo entregamos el software, sino que monitorizamos los
+                                servidores y estamos disponibles para agregar nuevas funciones o realizar mantenimiento
+                                proactivo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section id="contacto" class="cta">
+            <div class="container">
+                <div class="cta-box">
+                    <h2>¿Listo para incorporar un asistente digital en tu empresa?</h2>
+                    <p>Déjanos tus datos. Te contactaremos para evaluar cómo reducir tus tiempos operativos.</p>
+                    <a href="#contacto" class="btn btn-primary open-contact-modal"
+                        style="padding: 1rem 3rem; font-size: 1.2rem;">Contactar a Ventas</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#" class="logo-area" style="margin-bottom: 1rem;" aria-label="Inicio noddo.ia">
+                        <img src="./Logo.svg" alt="noddo.ia" width="120" style="height:auto;">
+                    </a>
+                    <p class="footer-text" style="max-width: 300px;">Transformando negocios tradicionales a través de
+                        automatizaciones amigables y soporte cercano paso a paso.</p>
+                </div>
+                <div class="footer-links">
+                    <strong>Nuestros Servicios</strong>
+                    <a href="#proyectos">Integración de Sistemas</a>
+                    <a href="#proyectos">Asistentes de Atención</a>
+                    <a href="#proyectos">Sincronización de Datos</a>
+                </div>
+                <div class="footer-links">
+                    <strong>Legal</strong>
+                    <a href="#">Privacidad</a>
+                    <a href="#">Términos</a>
+                </div>
+            </div>
+            <div
+                style="border-top: 1px solid var(--border); padding-top: 2rem; text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+                © 2026 noddo.ia. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="closeModal" class="close-modal">&times;</button>
+            <h2>Contactanos</h2>
+            <p>Dejanos tu mensaje y te responderemos a la brevedad.</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="contactName">Nombre</label>
+                    <input type="text" id="contactName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Email</label>
+                    <input type="email" id="contactEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage">Mensaje</label>
+                    <textarea id="contactMessage" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>Utilizamos cookies propias y de terceros para mejorar la experiencia de usuario y analizar el tráfico de nuestra web. Al hacer clic en "Aceptar", consientes el uso de todas las cookies.</p>
+            <div class="cookie-actions">
+                <button id="acceptCookies" class="btn btn-primary">Aceptar</button>
+                <button id="rejectCookies" class="btn btn-secondary">Rechazar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
