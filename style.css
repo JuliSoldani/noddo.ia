@@ -392,9 +392,10 @@ footer { padding: 4rem 0 2rem; background: var(--bg-secondary); border-top: 1px 
     .section-title h2 { font-size: 2rem; }
     .case-content h3 { font-size: 1.8rem; }
     
-    .case-block { grid-template-columns: 1fr; gap: 0.5rem; margin-bottom: 4rem; }
+    .case-block { grid-template-columns: 1fr; gap: 0.5rem; margin-bottom: 3rem; }
     .case-content ul { margin-bottom: 0; }
     .case-block.reverse { direction: ltr; }
+    .case-media { min-height: auto; padding: 1rem; }
     
     .integration-nodes { gap: 1rem; }
     .dash-top { flex-direction: column; }
