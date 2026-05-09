@@ -405,8 +405,12 @@ footer { padding: 4rem 0 2rem; background: var(--bg-secondary); border-top: 1px 
     .cta-box { padding: 3rem 1.5rem; }
     .cta-box h2 { font-size: 2rem; }
     
-    .footer-grid { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
-    .footer-grid > div:first-child { display: flex; flex-direction: column; align-items: center; }
+    footer { padding: 2.5rem 0 1.5rem; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem 1rem; text-align: center; }
+    .footer-grid > div:first-child { grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; margin-bottom: 0.5rem; }
+    .footer-links { gap: 0.4rem; }
+    .footer-links strong { margin-bottom: 0.3rem; font-size: 0.95rem; }
+    .footer-links a { font-size: 0.85rem; }
 }
 
 /* --- Contact Modal --- */
