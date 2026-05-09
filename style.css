@@ -338,17 +338,18 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; line-height: 1.2; }
 
 /* Process Section */
 .process-section { padding: 60px 0 100px; background: var(--bg-main); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-.process-grid { display: flex; align-items: flex-start; justify-content: space-between; position: relative; margin-top: 4rem; }
-.process-step { flex: 1; text-align: center; position: relative; padding: 0 1rem; }
-.step-number { width: 50px; height: 50px; background: var(--secondary); color: var(--primary); font-size: 1.5rem; font-weight: 700; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 4px solid var(--bg-main); position: relative; z-index: 2; box-shadow: var(--shadow-soft); }
-.process-step h4 { font-size: 1.25rem; margin-bottom: 1rem; }
-.process-step p { font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; }
-.process-line { flex: 0.1; height: 2px; background: var(--border); margin-top: 25px; min-width: 30px; }
+.process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 3rem; margin-top: 4rem; }
+.process-step { display: flex; flex-direction: column; text-align: left; }
+.step-number { color: var(--primary); font-size: 2.2rem; font-weight: 700; margin-bottom: 0.8rem; line-height: 1; }
+.process-step h4 { font-size: 1.3rem; margin-bottom: 1rem; color: var(--text-main); }
+.process-step p { font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1; }
+.step-footer { font-style: italic; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0 !important; }
 
 @media (max-width: 900px) {
-    .process-grid { flex-direction: column; align-items: center; gap: 3rem; }
-    .process-line { width: 2px; height: 30px; margin: 0; min-height: 30px; min-width: 2px; }
-    .process-step { max-width: 400px; }
+    .process-grid { grid-template-columns: repeat(2, 1fr); gap: 3rem; }
+}
+@media (max-width: 600px) {
+    .process-grid { grid-template-columns: 1fr; gap: 3rem; }
 }
 
 /* FAQ */
