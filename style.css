@@ -389,7 +389,7 @@ footer { padding: 4rem 0 2rem; background: var(--bg-secondary); border-top: 1px 
     .hero-actions { flex-direction: column; width: 100%; max-width: 300px; margin: 0 auto; }
     .hero-actions .btn { width: 100%; }
     
-    .section-title h2 { font-size: 2rem; }
+    .section-title h2 { font-size: 1.75rem; text-wrap: balance; }
     .case-content h3 { font-size: 1.8rem; }
     
     .cases-section { padding: 60px 0 20px; }
