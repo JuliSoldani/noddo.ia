@@ -347,7 +347,7 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; line-height: 1.2; }
 
 @media (max-width: 900px) {
     .process-grid { flex-direction: column; align-items: center; gap: 3rem; }
-    .process-line { width: 2px; height: 30px; margin: 0; min-height: 30px; }
+    .process-line { width: 2px; height: 30px; margin: 0; min-height: 30px; min-width: 2px; }
     .process-step { max-width: 400px; }
 }
 
@@ -381,7 +381,7 @@ footer { padding: 4rem 0 2rem; background: var(--bg-secondary); border-top: 1px 
 .footer-links a:hover { color: var(--primary); }
 
 @media (max-width: 768px) {
-    .nav-links { display: none; }
+    .nav-links a { display: none; }
     .hero { padding: 120px 0 60px; }
     .hero h1 { font-size: 2.5rem; }
     .hero p { font-size: 1.1rem; }
