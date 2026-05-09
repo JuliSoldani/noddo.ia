@@ -272,14 +272,15 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; line-height: 1.2; }
 }
 
 /* Use Cases / Projects */
-.cases-section { padding: 120px 0; }
+.cases-section { padding: 100px 0 40px; }
 .case-block {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
+.case-block:last-child { margin-bottom: 0; }
 .case-block.reverse { direction: rtl; }
 .case-block.reverse > * { direction: ltr; }
 
@@ -336,7 +337,7 @@ h1, h2, h3, h4 { color: var(--text-main); font-weight: 700; line-height: 1.2; }
 .dash-chart .bar:hover { opacity: 1; background: var(--primary-hover); }
 
 /* Process Section */
-.process-section { padding: 100px 0; background: var(--bg-main); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.process-section { padding: 60px 0 100px; background: var(--bg-main); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .process-grid { display: flex; align-items: flex-start; justify-content: space-between; position: relative; margin-top: 4rem; }
 .process-step { flex: 1; text-align: center; position: relative; padding: 0 1rem; }
 .step-number { width: 50px; height: 50px; background: var(--secondary); color: var(--primary); font-size: 1.5rem; font-weight: 700; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; border: 4px solid var(--bg-main); position: relative; z-index: 2; box-shadow: var(--shadow-soft); }
